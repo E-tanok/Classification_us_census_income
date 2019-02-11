@@ -17,7 +17,8 @@ Prediction task is to determine the income level for the person represented by t
 Incomes have been binned at the $50K level to present a binary classification problem, much like the
 original UCI/ADULT database.
 
-*Dataiku instructions :
+```
+Dataiku instructions :
 The archive contains 3 files:
 o A large learning .csv file
 o Another test .csv file
@@ -42,7 +43,8 @@ Find clear insights on the profiles of the people that make more than $50,000 / 
 
 Finally, you push your code on GitHub to share it with me, or send it via email.
 
-Once again, the goal of this exercise is not to solve this problem, but rather to spend a few hours on it and to thoroughly explain your approach.*
+Once again, the goal of this exercise is not to solve this problem, but rather to spend a few hours on it and to thoroughly explain your approach.
+```
 
 
 # Content
@@ -70,14 +72,17 @@ I finally use the train preprocessed data in order to predict the test labels.
 
 ##Income_study notebook :
 Accuracies on the 3 classifiers :
+
 ![alt text](https://github.com/E-tanok/projects_pictures/blob/master/Classification/AssessmentDataiku/acc_per_clf.png)
 
 Average accuracies per classes and per classifiers :
+
 ![alt text](https://github.com/E-tanok/projects_pictures/blob/master/Classification/AssessmentDataiku/avg_acc_per_class_and_clf.png)
-*The logistic regression is the algorithm which captures the best the higher income category*
+*The logistic regression is the algorithm which captures the best the higher income category informations*
 
 ##Income_final_model notebook :
 The logistic regression is the algorithm which captures the best the higher income category: thatswhy I chosen to implement it on the final code (Notebook "Income_final_model").
 Performances are close and slightly better than those of the "Income_study.ipnb" : A global accuracy of 95.3% and, with an accuracy of 38.5%, the model 4.2% more precise on the higher income category.
 Here is this model ROC curve :
+
 ![alt text](https://github.com/E-tanok/projects_pictures/blob/master/Classification/AssessmentDataiku/final_model_roc_curve.png)
