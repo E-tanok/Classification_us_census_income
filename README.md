@@ -86,3 +86,9 @@ Performances are close and slightly better than those of the "Income_study.ipnb"
 Here is this model ROC curve :
 
 ![alt text](https://github.com/E-tanok/projects_pictures/blob/master/Classification/AssessmentDataiku/final_model_roc_curve.png)
+
+
+##Most challenging areas :
+
+* The original columns of the two dataframes are not clean and I had to use the original documentation (census_income_metadata.txt) in order to have a proper schema.
+* The dataset is huge : I had remove some weak informative columns and to reduce the dimension of data because models took more than a day to learn.
