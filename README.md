@@ -70,7 +70,7 @@ I finally use the train preprocessed data in order to predict the test labels.
 
 # Results
 
-##Income_study notebook :
+## Income_study notebook :
 Accuracies on the 3 classifiers :
 
 ![alt text](https://github.com/E-tanok/projects_pictures/blob/master/Classification/AssessmentDataiku/acc_per_clf.png)
@@ -80,7 +80,7 @@ Average accuracies per classes and per classifiers :
 ![alt text](https://github.com/E-tanok/projects_pictures/blob/master/Classification/AssessmentDataiku/avg_acc_per_class_and_clf.png)
 *The logistic regression is the algorithm which captures the best the higher income category informations*
 
-##Income_final_model notebook :
+## Income_final_model notebook :
 The logistic regression is the algorithm which captures the best the higher income category: thatswhy I chosen to implement it on the final code (Notebook "Income_final_model").
 Performances are close and slightly better than those of the "Income_study.ipnb" : A global accuracy of 95.3% and, with an accuracy of 38.5%, the model 4.2% more precise on the higher income category.
 Here is this model ROC curve :
@@ -88,7 +88,7 @@ Here is this model ROC curve :
 ![alt text](https://github.com/E-tanok/projects_pictures/blob/master/Classification/AssessmentDataiku/final_model_roc_curve.png)
 
 
-##Most challenging areas :
+## Most challenging areas :
 
 * The original columns of the two dataframes are not clean and I had to use the original documentation (census_income_metadata.txt) in order to have a proper schema.
 * The dataset is huge : I had remove some weak informative columns and to reduce the dimension of data because models took more than a day to learn.
