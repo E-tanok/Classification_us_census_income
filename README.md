@@ -1,9 +1,9 @@
 This project is an assesment provided by the "Dataiku" software company.
-![alt text](https://github.com/E-tanok/projects_pictures/blob/master/AssessmentDataiku/logo_dataiku.png)
+![alt text](https://github.com/E-tanok/projects_pictures/blob/master/Classification/AssessmentDataiku/logo_dataiku.png)
 
 # The project
 
-This project aim is to study social data in order to understand income levels of two populations.
+This project aim is to study social census data in order to understand income levels of two populations.
 We have also to put in place methods that make it possible to classify the populations.
 
 Its data was extracted from the census bureau database found at http://www.census.gov/ftp/pub/DES/www/welcome.html
@@ -47,7 +47,7 @@ Once again, the goal of this exercise is not to solve this problem, but rather t
 
 # Content
 
-##Income_study.ipnb
+##Income_study notebook :
 I provided analysis on both continuous and categorical columns.
 I chose to remove some weakly informative columns for performance reasons.
 I splitted data into train and test perimeter (75/25%).
@@ -60,7 +60,7 @@ This way allows to preprocess data by avoiding data leakage.
 I implement 3 algorithms with cross validation : logistic regression, support vector classifier and random forest
 I make a benchmark of the 3 algorithms.
 
-##Income_final_model.ipnb
+##Income_final_model notebook :
 I automated the preprocessing steps made in "Income_study.ipnb" with a class named "Data_Preprocessor" .
 I load all the train ("census_income_learn.csv") and test ("census_income_test.csv") data and preprocess it.
 I finally use the train preprocessed data in order to predict the test labels.
@@ -68,16 +68,16 @@ I finally use the train preprocessed data in order to predict the test labels.
 
 # Results
 
-##Income_study.ipnb
+##Income_study notebook :
 Accuracies on the 3 classifiers :
-![alt text](https://github.com/E-tanok/projects_pictures/blob/master/AssessmentDataiku/acc_per_clf.png)
+![alt text](https://github.com/E-tanok/projects_pictures/blob/master/Classification/AssessmentDataiku/acc_per_clf.png)
 
 Average accuracies per classes and per classifiers :
-![alt text](https://github.com/E-tanok/projects_pictures/blob/master/AssessmentDataiku/avg_acc_per_class_and_clf.png)
+![alt text](https://github.com/E-tanok/projects_pictures/blob/master/Classification/AssessmentDataiku/avg_acc_per_class_and_clf.png)
 *The logistic regression is the algorithm which captures the best the higher income category*
 
-##Income_final_model.ipnb
+##Income_final_model notebook :
 The logistic regression is the algorithm which captures the best the higher income category: thatswhy I chosen to implement it on the final code (Notebook "Income_final_model").
 Performances are close and slightly better than those of the "Income_study.ipnb" : A global accuracy of 95.3% and, with an accuracy of 38.5%, the model 4.2% more precise on the higher income category.
 Here is this model ROC curve :
-![alt text](https://github.com/E-tanok/projects_pictures/blob/master/AssessmentDataiku/final_model_roc_curve.png)
+![alt text](https://github.com/E-tanok/projects_pictures/blob/master/Classification/AssessmentDataiku/final_model_roc_curve.png)
