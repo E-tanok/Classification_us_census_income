@@ -49,7 +49,7 @@ Once again, the goal of this exercise is not to solve this problem, but rather t
 
 # Content
 
-##Income_study notebook :
+## Income_study notebook :
 I provided analysis on both continuous and categorical columns.
 I chose to remove some weakly informative columns for performance reasons.
 I splitted data into train and test perimeter (75/25%).
@@ -62,7 +62,7 @@ This way allows to preprocess data by avoiding data leakage.
 I implement 3 algorithms with cross validation : logistic regression, support vector classifier and random forest
 I make a benchmark of the 3 algorithms.
 
-##Income_final_model notebook :
+## Income_final_model notebook :
 I automated the preprocessing steps made in "Income_study.ipnb" with a class named "Data_Preprocessor" .
 I load all the train ("census_income_learn.csv") and test ("census_income_test.csv") data and preprocess it.
 I finally use the train preprocessed data in order to predict the test labels.
