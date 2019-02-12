@@ -82,7 +82,7 @@ Average accuracies per classes and per classifiers :
 
 ## Income_final_model notebook :
 The logistic regression is the algorithm which captures the best the higher income category: thatswhy I chosen to implement it on the final code (Notebook "Income_final_model").
-Performances are close and slightly better than those of the "Income_study.ipnb" : A global accuracy of 95.3% and, with an accuracy of 38.5%, the model 4.2% more precise on the higher income category.
+Performances are close and slightly better than those of the "Income_study.ipnb" : A global accuracy of 95.3% and, with an accuracy of 38.5%, the model is 4.2% more precise on the higher income category predictions.
 Here is this model ROC curve :
 
 ![alt text](https://github.com/E-tanok/projects_pictures/blob/master/Classification/AssessmentDataiku/final_model_roc_curve.png)
